@@ -1,0 +1,415 @@
+@charset "UTF8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, div, article header, p, nav, ul, li{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html{
+    scrollbar-width: thin;
+}
+
+header{
+  overflow-x: hidden;
+}
+
+header > .header{
+    
+}
+
+header > .header > article{
+    
+}
+
+header > .header > article > nav{
+    background-color: brown;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    border-bottom:2px solid #2E90E9 ;
+    z-index: 1;
+    
+}
+
+header > .header > article > nav > .Logo {
+    display: flex;
+    align-items: center;
+    padding: .2em;
+}
+
+header > .header > article > nav > .Logo > img{
+    width: 4em;
+    
+}
+
+header > .header > article > nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: cneter;
+    width: 80%;
+    cursor:pointer;
+    z-index: 1;
+}
+
+header > .header > article > nav > ul > li{
+    display: inline-block;
+    position: relative;
+    padding: .3em 1.5em;
+    list-style-type:none;
+    font-size: 1.1em;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+
+header > .header > article > nav > ul > li::after{
+   content: "";
+   width: 0%;
+   background-color: black;
+   height: 2px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transition: .8s ease-in-out;
+   cursor:pointer;
+}
+
+header > .header > article > nav > ul > li:hover::after{
+    width: 100%;
+ }
+
+ header > .header > article > nav > ul > li > .dropNone{
+    width: 7em;
+    height: 6em;
+    position: absolute;
+    margin-left:-1.5em;
+    margin-top: 0;
+}
+header > .header > article > nav > ul > li > div > ul{
+    background-color: black;
+    list-style-type:none;
+    height: 5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:1.3em;
+    width: 7em;
+    margin-left: 0em;
+    padding: .3em 1.5em;
+    position: relative;
+}
+
+ header > .header > article > nav > ul > li > .dropDown-child {
+    display: none;
+}
+
+
+
+.show-child{
+    display: flex; 
+}
+
+    header > .header > article > nav > ul > li > div> ul > li{
+        padding: .3em 1.5em;
+        list-style-type:none;
+        text-align: left;
+        position: relative;
+
+    }
+
+    header > .header > article > nav > ul > li > div> ul > li:hover{
+      background-color: brown;
+
+    }
+
+header  .fundo-principal{
+    background-image: url(../img/background.webp);
+    background-position: center;
+    width: 100vw;
+    height: 89vh;
+    background-color: black;
+    box-sizing: border-box;
+
+}
+
+header > .fundo-principal .saudar{
+    height: 98vh;
+    position:absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+header > .fundo-principal .saudar > article{
+    display: flex;
+    margin-top: 15em;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 4px #000;
+
+}
+
+header > .fundo-principal .saudar > article > h2{
+    color: brown;
+
+}
+
+header > .fundo-principal .saudar > article > h1{
+    color: #2E90E9;
+    margin: .5em;
+    font-size: 2.5em;
+    cursor: pointer;
+
+}
+
+header > .fundo-principal .saudar article > h3{
+    color: #2e90e9;
+    font-size: 1.5em;
+    margin-top: -.5em;
+
+}
+
+/*Section*/
+
+section > .programa{
+    position: relative;
+}
+
+section > .programa  > .box-programa{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 0 10em;
+    position: absolute;
+    width: 100%;
+    top: -3em;
+}
+
+section > .programa  > .box-programa > div{
+    box-shadow: 0px 0px 4px;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    z-index: 1;
+    background-color: #fff;
+    position: relative;
+}
+
+section > .programa  > .box-programa > div > .hora-progra{
+    display: block;
+    text-align: center;
+    padding: 0;
+    font-size: 2.5em;
+    color: brown;
+    position: absolute;
+    top: .2em;
+    right: .4em;
+    border-radius: 10px;
+}
+.dia-semana{
+    display: flex;
+    text-align: center;
+    padding: .15em 0;
+    color: #2e90e9;
+    font-size: 2.5em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dia-semana img{
+    width: 1.5em;
+}
+
+.info-programa{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:#353333;
+    display: block;
+    font-size: .9em;
+    letter-spacing: 1px;
+}
+
+/*Sitações Biblicas*/
+
+section > .bible-quote-container{
+    position: relative;
+    top: 16em;
+}
+section > .bible-quote-container > article {
+    background-color: rgb(43, 40, 40);
+    display: flex;
+    padding: 1em 5em;
+    height: 65vh;
+}
+
+
+section > .bible-quote-container > article > div {
+    box-shadow: 0px 0px 4px;
+    overflow: hidden;
+    cursor: default;
+    transition: 1s;
+}
+
+section > .bible-quote-container > article > div:hover {
+    box-shadow: 0px 0px 6px #2E90E9;
+}
+
+div.texto-imagem{
+    padding: 0 4em;
+    width: 55%;
+}
+
+div#imageQuote{
+    width: 45%;
+  
+}
+
+section > .bible-quote-container > article > div > img {
+    width:100%;
+}
+
+section > .bible-quote-container > article > div > .quote-symbole {
+    color: brown;
+    display: block;
+    font-size: 4em;
+}
+section > .bible-quote-container > article > div > h2{
+    font-size: 2.1em;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: brown;
+}
+
+section > .bible-quote-container > article > div > p{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: .9em;
+    font-style: italic;
+    color: #70a4d4a2;
+    width: 90%;
+}
+
+
+
+section > .bible-quote-container > article > div > ul > li{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: .8em;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: #fff;
+    
+}
+
+section > .bible-quote-container > article > div > ul > li > a{
+ color: #fff; 
+ transition: .5s;
+}
+
+section > .bible-quote-container > article > div > ul > li > a:hover{
+    text-decoration: none;
+    color:#2E90E9;
+}
+
+.page-wrapper{
+   background-image: url('../img/pombo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1e1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sub-page-wrapper{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+
+}
+
+.post-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+    width: 93.7vw;
+}
+.post-slide h1{
+   font-size: 1.8vw;
+   color: brown;
+   background-color: rgb(43, 40, 40);
+   padding:.5em 1em;
+   border-radius: 15px;
+}
+
+
+.post-wrapper{
+    font-size: 3.2vw;
+    margin-bottom: 1em;
+    width: 70%;
+    text-align: justify;
+    color:#ffffff;
+    text-shadow: 3px 3px 2px green;
+    font-weight: bolder;
+}
+
+.nossa-localizacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.nossa-localizacao iframe{
+  width: 70vw;
+  height: 50vh;
+}
+
+footer{
+    height: 42vh;
+    background-color: #1e1d1d;
+    color: #fff;
+    padding: 2em;
+}
+
+footer > .container{ 
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+
+footer > .container > div{ 
+    display: flex;
+    width: 100%;
+    background-color: brown;
+    padding-left:0.29em ;
+    padding-bottom:0.29em ;
+    padding-top:0.29em ;
+    gap: 3em;
+}
+
+footer > .container > div img{ 
+    border-radius: 4em;
+    width: 22%;
+}
+
+
