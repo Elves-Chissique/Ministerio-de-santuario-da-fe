@@ -304,8 +304,6 @@ section > .bible-quote-container > article > div > p{
     width: 90%;
 }
 
-
-
 section > .bible-quote-container > article > div > ul > li{
     margin-top: 1em;
     margin-bottom: 1em;
@@ -405,6 +403,7 @@ footer > .container > div{
     padding-bottom:0.29em ;
     padding-top:0.29em ;
     gap: 3em;
+    align-items: center;
 }
 
 footer > .container > div img{ 
@@ -412,4 +411,11 @@ footer > .container > div img{
     width: 22%;
 }
 
+
+footer > .container > div > div{
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
