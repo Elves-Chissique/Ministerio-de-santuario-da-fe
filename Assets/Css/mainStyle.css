@@ -412,10 +412,38 @@ footer > .container > div img{
 }
 
 
-footer > .container > div > div{
+footer > .container > div > div.endereco{
     height: 42vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+    color: #a8a1a1;
+    font-size: 14px;
 }
+
+footer > .container > div > div.redes-socias > article{
+   display: flex;
+   cursor: pointer;
+   width: 30vw;
+   justify-content: space-between;
+   margin-top:1em;
+}
+footer > .container > div > div.redes-socias > article h1{
+   width: 30vw;
+   text-align: center;
+   margin-bottom: 2em;
+   letter-spacing: 3px;
+   color: #a8a1a1;
+ }
+
+footer > .container > div > div.redes-socias > article img{
+    transition: .5s ease-in-out;
+    width: 3vw;
+}
+
+footer > .container > div > div.redes-socias > article img:hover{
+    transform: scale(1.2);
+}
+  
 
